@@ -1,0 +1,233 @@
+
+  /* Base
+  ========================================================================== */
+  
+  html {
+    font-size: 16px;
+  }
+  
+ 
+  /* Layout
+  ========================================================================== */
+  
+  .header-container {
+    background: #9b0606;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0;
+  }
+  
+  .header-content {
+    color: #f1f1f1;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin: 0;
+  }
+
+  .intro-container {
+    background-image: url(pizzabkgd.jpg);
+    background-repeat: repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .intro-content {
+    color:black;
+  }
+  
+  .footer-container {
+    background: #1b1b27;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0;
+  }
+  
+  .footer-content {
+    font-size: 13px;
+    color: #f1f1f1;
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+  }
+  
+  /* Links and Link Buttons
+  ========================================================================== */
+  a {
+    text-decoration: none;
+  }
+  
+  a:visited {
+  }
+  
+  a:focus {
+  }
+  a:hover,
+  a:active {
+  }
+   
+  .btn:hover,
+  .btn:focus,
+  .btn:active {
+    background: #74b44a;
+    color: #f1f1f1;
+    border: 2px solid #74b44a;
+  }
+
+  #hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+  }
+  
+  #hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
+  
+  .open .bar2 {
+    opacity: 0;
+  }
+  
+  .open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+  }
+
+  
+  
+  /* Typography
+  ========================================================================== */
+  
+  h1 {
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    color: rgb(58, 233, 58);
+    text-shadow: 3px 3px 1px black;
+  }
+  
+  p {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-style: oblique;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Images and Videos
+  ========================================================================== */
+  
+  .aboutme-photo {
+    width: 100%;
+    max-width: 320px;
+  }
+  
+  /* Forms
+  ========================================================================== */
+  
+  /* Tables
+  ========================================================================== */
+  
+  /* 	
+  =============================================================================
+   MEDIA QUERIES
+  =============================================================================
+  */
+  
+  @media only screen and (min-width: 320px) {
+  }
+  
+  @media only screen and (min-width: 480px) {
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .projects-content {
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+    }
+  
+    .main-nav {
+      display: block;
+    }
+  
+    .mobile-nav {
+      display: none;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      height: calc(100vh - 50px);
+      width: 100%;
+    }
+    
+    .open .mobile-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    
+    .mobile-nav li {
+      margin-bottom: 10px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        header nav {
+          display: none;
+        }
+      
+        #hamburger-icon {
+          display: block;
+        }
+      }
+  
+    ul#navigation {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      padding: 0;
+      margin: 0;
+    }
+  
+    ul#navigation li a {
+      color: #f1f1f1;
+      font-family: "Cabin", sans-serif;
+      padding: 6px 12px;
+      border: solid 2px transparent;
+      text-transform: uppercase;
+    }
+  
+    ul#navigation li a:hover {
+      color: #f1f1f1;
+      font-family: "Cabin", sans-serif;
+      padding: 6px 12px;
+      border-bottom: solid 2px #74b44a;
+    }
+  }
+  
+  /* 	
+  =============================================================================
+   PRINT STYLES
+  =============================================================================
